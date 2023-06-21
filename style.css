@@ -345,14 +345,14 @@ nav > ul > li > a:hover{
 @media screen and (max-width: 480px) {
     
     header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 10px 0px;
-    gap: 20px;
-    align-items: center;
-    margin: 5% 10%;
-    font-size: 2em;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 10px 10px;
+        gap: 60px;
+        align-items: center;
+        margin: 5% 5%;
+        font-size: 2em;
     }
 
     .header-spacing:nth-child(1) {
