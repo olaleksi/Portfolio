@@ -37,8 +37,9 @@ header {
 }
 
 .header-spacing:nth-child(1) {
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'monospace';
     text-shadow: 13px 20px 8px grey;
+    text-transform: capitalize;
 }
 
 .fonta{
@@ -57,7 +58,8 @@ ul {
     justify-content: space-around;
     list-style: none;
     align-items: center;
-    opacity: 0.7;
+    opacity: 0.6;
+    padding: 0px 10px;
 }
 
 a {
@@ -227,7 +229,7 @@ i{
     justify-content: center;
     gap: 10px;
     align-items: center;
-    font-family: cursive;
+    font-family: monospace;
     font-size: 1.2rem;
 }
 
@@ -354,7 +356,7 @@ nav > ul > li > a:hover{
     }
 
     .header-spacing:nth-child(1) {
-        font-family: cursive;
+        font-family: monospace;
         text-shadow: 13px 20px 8px grey;
         font-size: 1.2rem;
     }
@@ -365,10 +367,14 @@ nav > ul > li > a:hover{
         gap: 10px;
         flex-wrap: wrap;
     }
-
-    .fonta {
-        font-family: cursive;
+    
+    nav {
+        border-bottom: 1px solid rgba(92, 92, 92, 0.44);
+        border-top: 1px solid rgba(92, 92, 92, 0.44);
+        margin: 5% 5%;
     }
+
+   
 
     .float-left {
         display: flex;
@@ -418,7 +424,7 @@ nav > ul > li > a:hover{
         text-align: center;
         flex-direction: column;
         margin: 2% 10%;
-        font-family: cursive;
+        font-family: monospace;
     }
 
     .contact-logos {
