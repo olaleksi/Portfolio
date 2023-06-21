@@ -55,7 +55,7 @@ nav{
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     align-items: center;
     opacity: 0.6;
@@ -374,6 +374,15 @@ nav > ul > li > a:hover{
         margin: 5% 5%;
     }
 
+
+     nav>ul>li>a:hover {
+        background: #fff;
+        color: black;
+        border-radius: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        
+    }
    
 
     .float-left {
@@ -385,6 +394,10 @@ nav > ul > li > a:hover{
         justify-content: flex-end;
     }
 
+    .float-left>a>i:hover {
+        transform: unset;
+        transition: unset;
+    }
 
     #about {
         display: grid;
@@ -417,6 +430,11 @@ nav > ul > li > a:hover{
         margin: 10% 0%;
     }
 
+    #project-container>div:hover {
+        transform: unset;
+        transition: unset;
+    }
+
     #contact {
         display: flex;
         justify-content: center;
@@ -435,6 +453,11 @@ nav > ul > li > a:hover{
         gap: 5px;
         font-size: 1.5em;
         flex-wrap: wrap;
+    }
+
+     .contact-logos>a:hover {
+        transform: unset;
+        transition: unset;
     }
 
 
