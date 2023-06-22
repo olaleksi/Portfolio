@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olalekan portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b7317ba171.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b7317ba171.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-spacing">
+            <div>Olajide Olalekan</div>
+            <p class="animate__animated animate__zoomIn fonta" >Welcome to my website</p>
+            
+        </div>
+        
+        <div class="header-spacing">
+            <div class="float-left">
+               <a href="https://github.com/olaleksi" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+               <a href="#" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+               <a href="https://www.linkedin.com/in/olalekan-olajide-9495b5278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="role">Frontend Developer</div>
+        </div>
+    </header>
+
+    <nav>
+        <!--nav justify-content-center"-->
+        <ul class="navigation">
+            <li class="nav-item1 ">
+                <a class="nav-link " href="#home">Home</a>
+            </li>
+            <li class="nav-item2">
+                <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item3">
+                <a class="nav-link disabled" href="#project-container">Projects link</a>
+            </li>
+            <li class="nav-item4">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <span class="toggleMenu"></span>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div>
+            <img class="avatar" src="./images/avatar.png" alt="">
+        </div>
+        
+        <div class="aboutme-summary">
+            <p class="about-me" >ABOUT</p>
+            <p class="align">As a Frontend Developer , 
+                I specialize in building and 
+                maintaining the user interface of 
+                web applications.
+                I am passionate about creating
+                efficient and effective solutions that 
+                enhance the user experience while
+                keeping up-to-date with industry trends 
+                and best practices.
+            </p>
+
+            <div class="tools">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-react"></i>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!--projects section-->
+    <div  id="project-container">
+       
+        
+        <div>
+            <div>Random Quote Machine</div>
+            <a href="https://olaleksi.github.io/QuoteMachine/" target="_blank"><img src="./images/quoteimage.png" alt=""></a>
+        </div>
+
+        <div>
+            <div>Markdown Previewer</div>
+            <a href="https://markdown-previewer.olaleksi.repl.co/" target="_blank"><img src="./images/markdown.png" alt=""></a>
+        </div>
+        
+        <div>
+            <div>Mimic Portfolio</div>
+            <a href="https://olaleksi.github.io/mimicportforlio.github.io/" target="_blank"><img src="./images/mimicportfolio.png" alt=""></a>
+        </div>
+        
+        <div>
+            <div>Blog</div>
+            <a href="https://olaleksi.github.io/homepage.github.io/#" target="_blank"><img src="./images/blog.png" alt=""></a>
+        </div>
+
+    </div>
+
+    <!--contact me scetion-->
+    <section id="contact">
+        <div class="contactme">Contact Me</div>
+        <p class="opacity">I look forward to hearing from you. Feel free to use the details below.</p>
+
+        <div class="contact-logos">
+            <a href="mailto:olaleksi@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="" target="_blank"><i class="fa-brands fa-square-twitter" ></i> Twitter</a>
+            <a href="https://www.linkedin.com/in/olalekan-olajide-9495b5278/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedln</a>
+        </div>
+
+        <p class="message">send a message</p>
+
+
+
+        
+          <form action="" method="get">
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" name="" id="" aria-describedby="name" placeholder="Name">
+                <input id="email" type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email">
+                <textarea id="message" placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                <button type="button" id="send">Send</button>
+            </div>
+          </form>
+      
+        
+        
+
+    </section>
+
+
+    <!--Footers section-->
+    <footer>Designed & Developed by Olalekan Olajide <i class="fa-regular fa-copyright"></i> 2023;</footer>
+    
+    <script src="./javascript.js"></script>
+</body>
+</html>
