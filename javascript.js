@@ -57,3 +57,15 @@ function removeFunction(){
     javascript.classList.remove('subJavascript', 'animate__animated', 'animate__pulse');
     react.classList.remove('subReact', 'animate__animated', 'animate__pulse');
 }
+
+
+//nav styling
+
+let navigation = document.querySelector('.navigation');
+let toggleMenu = document.querySelector('.toggleMenu');
+
+toggleMenu.addEventListener('click', toggleFunction);
+
+function toggleFunction() {
+    navigation.classList.toggle('active');
+}

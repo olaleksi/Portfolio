@@ -7,6 +7,11 @@
 
 }
 
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -31,7 +36,7 @@ header {
 
 .header-spacing{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -46,25 +51,128 @@ header {
     font-family: monospace;
 }
 
-nav{
+/*nav styling*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5% 0%;
+}
+
+.navigation {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 0px 10px;
+    opacity: 0.6;
+}
+
+.navigation.active {
+    width: 80%;
+}
+
+.navigation>.toggleMenu {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.navigation.active .toggleMenu {
+    background-color: #ff4181;
+    transition-delay: 0s;
+    transform: translateY(60px);
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navigation .toggleMenu::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #333;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.navigation .toggleMenu::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #333;
+    transform: translateY(5px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.navigation.active .toggleMenu::before {
+    transition-delay: 0s;
+    background-color: white;
+    transform: translateY(0px) rotate(45deg) scale(0.6);
+}
+
+.navigation.active .toggleMenu::after {
+    transition-delay: 0s;
+    background-color: white;
+    transform: translateY(0px) rotate(315deg) scale(0.6);
+}
+
+
+
+/*nav styling*/
+
+/*nav{
     border-bottom: 1px solid rgba(92, 92, 92, 0.44);
     border-top: 1px solid rgba(92, 92, 92, 0.44);
     margin: 5% 10%;
-}
+}*/
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+
+.navigation li {
     list-style: none;
-    align-items: center;
-    opacity: 0.6;
-    padding: 0px 10px;
+    transition: 0.5s;
+    transform: scale(0);
 }
 
-a {
+.navigation.active li{
+    transition-delay: 0.75s;
+    display: flex;
+    transform: scaleX(1);
+}
+
+
+
+.navigation li a {
     text-decoration: none;
-    color: aliceblue;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+
 }
 
 .role {
@@ -244,9 +352,9 @@ i{
     object-fit: cover;
 }
 
-nav > ul > li > a:hover{
-    background: #fff;
-    color: black;
+.navigation.active >  li > a:hover{
+    color: #fff;
+    background: rgba(19, 19, 19, 0.56);
     border-radius: 10px;
     padding: 10px;
     text-transform: uppercase;
@@ -367,22 +475,18 @@ nav > ul > li > a:hover{
         gap: 10px;
         flex-wrap: wrap;
     }
+
+    .navigation li a {
+         text-transform: unset; 
+         letter-spacing: unset; 
+    }
     
-    nav {
-        border-bottom: 1px solid rgba(92, 92, 92, 0.44);
-        border-top: 1px solid rgba(92, 92, 92, 0.44);
-        margin: 5% 5%;
+    .navigation.active {
+        width: 370px;
     }
 
+    
 
-     nav>ul>li>a:hover {
-        background: #fff;
-        color: black;
-        border-radius: 10px;
-        padding: 10px;
-        text-transform: uppercase;
-        
-    }
    
 
     .float-left {
@@ -399,11 +503,12 @@ nav > ul > li > a:hover{
         transition: unset;
     }
 
+
     #about {
         display: grid;
         /* grid-template-columns: 1fr; */
         grid-template-columns: min-content;
-        margin: 0% 20%;
+        margin: 10% 20%;
     }
 
     .about-me {
@@ -455,7 +560,7 @@ nav > ul > li > a:hover{
         flex-wrap: wrap;
     }
 
-     .contact-logos>a:hover {
+    .contact-logos>a:hover {
         transform: unset;
         transition: unset;
     }
@@ -471,4 +576,4 @@ nav > ul > li > a:hover{
 }
     
 
-        
+     
